@@ -2,6 +2,13 @@
 """
 Simple web scrapper that obtains the titles from the results of
 a search in the www.ted.com web page.
+
+Usage example:
+(Linux)
+2_consoleArgs_webscrapper.py artificial intelligence 1 20
+
+(Windows)
+python 2_consoleArgs_webscrapper.py artificial intelligence 1 20
 """
 
 
@@ -12,7 +19,7 @@ import sys
 if len(sys.argv) != 4:
     raise SystemExit(
         "".join(
-            ("Usage: 2_consoleArgs_webscrapper.py",
+            ("Usage: 2_consoleArgs_webscrapper.py ",
              "<term to seach> <page_number> <results per page>")
         )
     )
