@@ -7,6 +7,9 @@ Store pairs arg:result in a dictionary in an attribute of the function object.
 def cache(function):
     cache_dict = {}
     def wrapper(*args, **kwargs):
+        """
+        wrapper documentation
+        """
         if args not in cache_dict.keys():
             cache_dict[args] = function(*args)
         return cache_dict[args]
@@ -15,6 +18,9 @@ def cache(function):
 
 @cache
 def fibonacci(n):
+    """
+    fibo documentation
+    """
     if n < 2:
         return 1
     else:
