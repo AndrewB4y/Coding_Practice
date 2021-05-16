@@ -130,3 +130,6 @@ dmypy.json
 
 # Excel practice data
 *.xlsx
+
+# My practice
+*.andy
