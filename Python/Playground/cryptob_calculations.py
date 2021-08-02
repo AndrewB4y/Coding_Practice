@@ -111,7 +111,6 @@ if aligned:
     if traits_rel[enemy_trait1] == hero_trait:
         trait_bonus -= 0.075
     power = orig_power * trait_bonus
-    print(power)
 
 min_power = int(power * 0.9)
 max_power = int(power * 1.1)
@@ -122,7 +121,7 @@ max_enemy1 = int(enemy_power1 * 1.1)
 if max_enemy1 > max_power:
     print("Aborte viejo, por debajo del 50%")
 
-prob_enemy1 = (1 - (((max_enemy1 - min_power) / (max_power - min_power)) * ((max_enemy1 - min_power) / (max_enemy1 - min_enemy1)))) * 100
+prob_enemy1 = (1 - ((((max_enemy1 - min_power) / (max_power - min_power)) * ((max_enemy1 - min_power) / (max_enemy1 - min_enemy1))) * 0.5)) * 100
 
 print(prob_enemy1)
 
@@ -139,7 +138,6 @@ if aligned:
     if traits_rel[enemy_trait2] == hero_trait:
         trait_bonus -= 0.075
     power = orig_power * trait_bonus
-    print(power)
 
 min_power = int(power * 0.9)
 max_power = int(power * 1.1)
@@ -150,7 +148,7 @@ max_enemy2 = int(enemy_power2 * 1.1)
 if max_enemy2 > max_power:
     print("Aborte viejo, por debajo del 50%")
 
-prob_enemy2 = (1 - (((max_enemy2 - min_power) / (max_power - min_power)) * ((max_enemy2 - min_power) / (max_enemy2 - min_enemy2)))) * 100
+prob_enemy2 = (1 - ((((max_enemy2 - min_power) / (max_power - min_power)) * ((max_enemy2 - min_power) / (max_enemy2 - min_enemy2))) * 0.5)) * 100
 
 print(prob_enemy2)
 
@@ -168,7 +166,6 @@ if aligned:
     if traits_rel[enemy_trait3] == hero_trait:
         trait_bonus -= 0.075
     power = orig_power * trait_bonus
-    print(power)
 
 min_power = int(power * 0.9)
 max_power = int(power * 1.1)
@@ -179,7 +176,7 @@ max_enemy3 = int(enemy_power3 * 1.1)
 if max_enemy3 > max_power:
     print("Aborte viejo, por debajo del 50%")
 
-prob_enemy3 = (1 - (((max_enemy3 - min_power) / (max_power - min_power)) * ((max_enemy3 - min_power) / (max_enemy3 - min_enemy3)))) * 100
+prob_enemy3 = (1 - ((((max_enemy3 - min_power) / (max_power - min_power)) * ((max_enemy3 - min_power) / (max_enemy3 - min_enemy3))) * 0.5)) * 100
 
 print(prob_enemy3)
 
@@ -197,7 +194,6 @@ if aligned:
     if traits_rel[enemy_trait4] == hero_trait:
         trait_bonus -= 0.075
     power = orig_power * trait_bonus
-    print(power)
 
 min_power = int(power * 0.9)
 max_power = int(power * 1.1)
@@ -208,6 +204,6 @@ max_enemy4 = int(enemy_power4 * 1.1)
 if max_enemy4 > max_power:
     print("Aborte viejo, por debajo del 50%")
 
-prob_enemy4 = (1 - (((max_enemy4 - min_power) / (max_power - min_power)) * ((max_enemy4 - min_power) / (max_enemy4 - min_enemy4)))) * 100
+prob_enemy4 = (1 - ((((max_enemy4 - min_power) / (max_power - min_power)) * ((max_enemy4 - min_power) / (max_enemy4 - min_enemy4))) * 0.5)) * 100
 
 print(prob_enemy4)
