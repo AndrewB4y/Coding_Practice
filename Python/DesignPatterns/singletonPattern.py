@@ -30,6 +30,7 @@ class SingletonMeta(type):
             self._instance = super().__call__()
         return self._instance
 
+
 class TimeSingleton(metaclass=SingletonMeta):
     def __init__(self):
         self.now_cls = datetime.utcnow()
